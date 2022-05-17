@@ -19,7 +19,8 @@
                         <label>Autor</label>
                         <input type="text" name="autor" class="form-control">
                         <label>Fecha de Publicacion</label>
-                        <input type="text" name="publicacion" class="form-control">
+                        <input type="text" name="fechaPublicacion" class="form-control">
+                        <br>
                         <input type="submit" value="Agregar" class="btn btn-success">
                         <a href="index.htm">Regresar</a>
                     </form>

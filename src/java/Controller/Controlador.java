@@ -40,7 +40,7 @@ public class Controlador {
     @RequestMapping(value = "agregar.htm", method = RequestMethod.POST)
     public ModelAndView Agregar(Libro l){
         String sql = "insert into libro(NombreDelLibro, Autor, FechaPublicacion)values(?,?,?)";
-        this.jdbcTemplate.update(sql,l.getNombreLibro(),l.getAutor(),l.getPublicacion());
+        this.jdbcTemplate.update(sql,l.getNombreLibro(),l.getAutor(),l.getFechaPublicacion());
         return new ModelAndView("redirect:/index.htm");   
     }
     @RequestMapping(value = "editar.htm", method = RequestMethod.GET)
@@ -55,7 +55,7 @@ public class Controlador {
     @RequestMapping(value = "editar.htm", method = RequestMethod.POST)
     public ModelAndView Editar(Libro l){
         String sql = "update libro set NombreDelLibro=?, Autor=?,FechaPublicacion=? where Id_libro=?";
-        this.jdbcTemplate.update(sql,l.getNombreLibro(),l.getAutor(),l.getPublicacion(),id);
+        this.jdbcTemplate.update(sql,l.getNombreLibro(),l.getAutor(),l.getFechaPublicacion(),id);
         return new ModelAndView("redirect:/index.htm");             
     }
      @RequestMapping("eliminar.htm")

@@ -11,8 +11,8 @@ public class Conexion {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();  
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/registro");
-        dataSource.setUsername("analy");
-        dataSource.setPassword("12345678");
+        dataSource.setUsername("root");
+        dataSource.setPassword("");
         return dataSource;
              
     }

@@ -20,7 +20,7 @@
                         <label>Autor</label>
                         <input type="text" name="autor" class="form-control" value="${lista[0].Autor}">
                         <label>Fecha de Publicacion</label>
-                        <input type="text" name="publicacion" class="form-control" value="${lista[0].FechaPublicacion}"><br>
+                        <input type="text" name="fechaPublicacion" class="form-control" value="${lista[0].FechaPublicacion}"><br>
                         <input type="submit" value="Actualizar" class="btn btn-success">
                         <a href="index.htm">Regresar</a>
                     </form>

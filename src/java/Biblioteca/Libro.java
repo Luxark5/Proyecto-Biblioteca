@@ -7,16 +7,16 @@ public class Libro {
     int id;
     String nombreLibro;
     String autor;
-    String publicacion;
+    String fechaPublicacion;
 
     public Libro() {
         
     }
-    public Libro(int id, String nombreLibro, String autor, String publicacion) {
+    public Libro(int id, String nombreLibro, String autor, String fechaPublicacion) {
         this.id = id;
         this.nombreLibro = nombreLibro;
         this.autor = autor;
-        this.publicacion = publicacion;
+        this.fechaPublicacion = fechaPublicacion;
     }
 
     public int getId() {
@@ -43,12 +43,12 @@ public class Libro {
         this.autor = autor;
     }
 
-    public String getPublicacion() {
-        return publicacion;
+    public String getFechaPublicacion() {
+        return fechaPublicacion;
     }
 
-    public void setPublicacion(String publicacion) {
-        this.publicacion = publicacion;
+    public void setFechaPublicacion(String fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
     }
     
 }
